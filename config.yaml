@@ -23,25 +23,23 @@
 # Запуск в 10:00 + 24 = окно "вчера 10:00 — сегодня 10:00".
 lookback_hours: 24
 
-# Максимум новостей на одну тему (чтобы дайджест не разрастался).
 max_items_per_topic: 5
 
-# Язык и регион выдачи Google News (можно не трогать).
 google_news_locale:
   hl: en
   gl: US
-  ceid: GB:en
+  ceid: US:en
 
 topics:
-  # Способ 1 — поиск по теме (keywords не нужны):
-  - name: "🤖 Искусственный интеллект"
-    google_news: '"искусственный интеллект" OR нейросеть OR OpenAI OR Claude OR Gemini OR "машинное обучение" OR "глубокое обучение" OR "нейронные сети"'
 
-  - name: "📈 Глобальные новости"
-    google_news: '"экономика" OR "политика" OR "общество" OR "культура" OR "спорт" OR "наука" OR "технологии" OR "мировые новости" OR "world news"'
+  - name: "🤖 AI"
+    google_news: 'OpenAI OR Anthropic OR Claude OR Gemini OR ChatGPT OR "Artificial Intelligence" OR AI OR LLM OR "Machine Learning"'
 
-  - name: " Стартапы и технологии"
-    google_news: '"стартап" OR "технологии" OR "инновации" OR "венчур" OR "инвестиции" OR "техно новости" OR "заработок в интернете" OR "технологические тренды"'
+  - name: "🌍 World"
+    google_news: '"World News" OR Geopolitics OR International OR Economy OR Technology'
+
+  - name: "🚀 Startups & Tech"
+    google_news: 'Startup OR Startups OR Venture Capital OR Funding OR Acquisition OR Technology OR Innovation'
 
 
   
