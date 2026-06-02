@@ -24,13 +24,13 @@
 lookback_hours: 24
 
 # Максимум новостей на одну тему (чтобы дайджест не разрастался).
-max_items_per_topic: 15
+max_items_per_topic: 5
 
 # Язык и регион выдачи Google News (можно не трогать).
 google_news_locale:
-  hl: ru
-  gl: RU
-  ceid: RU:ru
+  hl: en
+  gl: US
+  ceid: GB:en
 
 topics:
   # Способ 1 — поиск по теме (keywords не нужны):
