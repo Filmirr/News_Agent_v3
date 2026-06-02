@@ -135,10 +135,8 @@ def build_messages(config: dict) -> list[str]:
         total += len(items)
         lines.append(f"\n<b>{html.escape(topic['name'])}</b>")
         for it in items:
-            lines.append(
-                f'• <a href="{html.escape(it["link"], quote=True)}">'
-                f'{html.escape(it["title"])}</a>'
-            )
+            lines.append(f'• <a href="{html.escape(it["link"], quote=True)}">' f'{html.escape(it["title"])}</a>' )
+            lines.append("")
 
     if total == 0:
         return [header + "\n\nСвежих новостей по вашим темам не найдено 🤷"]
